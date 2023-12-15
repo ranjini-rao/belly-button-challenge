@@ -4,7 +4,7 @@ const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/
 // Fetch the JSON data and console log it
 d3.json(url).then(function(data) {
   console.log(data);
-});
+}); 
 
 // Initialize the dashboard at start up 
 function init() {
