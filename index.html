@@ -7,24 +7,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
+</head> 
 
-<body>
+
+  <body style="background-color: #C3F5D3;">
+    <div class="topnav" style = "text-align: center;
+    padding: 10px; position:fixed; z-index: 2; width: 100%; transition: top 0.3s;; background-color: rgba(0, 255, 26, 0.263); ;">
+    
+    
+      <a href="#BellyButton" style="color:black;"><b><u>Home</u></b></a>&nbsp;&nbsp;&nbsp;
+      <a href="#bar" style="color:black;"><b><u>BarChart</u></b></a>&nbsp;&nbsp;&nbsp;
+      <a href="#gauge" style="color:black;"><b><u>GaugeChart</u></b></a>&nbsp;&nbsp;&nbsp; 
+      <a href="#bubble" style="color:black;"><b><u>BubbleChart</u></b></a>&nbsp;&nbsp;&nbsp;
+      
+    </div>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+    <div id= "BellyButton" class="row">
+      <div class="col-md-12 jumbotron text-center" style = "background-image:url(https://img.freepik.com/free-photo/green-virus-cells-floating_1048-12468.jpg?w=900&t=st=1702436913~exp=1702437513~hmac=cad31a746feba830abedede169771305a76c985b9e297c1e399e1aec2910f2b3);">
+        <h1 style="font-weight: bold; color: rgb(64, 224, 136);">Belly Button Biodiversity Dashboard</h1>
+        <p style="color:aliceblue">Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-2">
-        <div class="well">
+        <div class="well" style="background-color: #d8ddf1cd;
+        font-family: Tahoma;
+        font-weight: 90;
+        font-size: smaller;">
           <h5>Test Subject ID No.:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
+        <div class="panel panel-primary" style="background-color: #d8ddf1cd;
+         font-family: Tahoma;
+        font-weight: 90;">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
@@ -33,14 +49,18 @@
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+        <h4><b>Horizontal Bar Chart</b></h4>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        
+        <h4><b>Gauge Chart</b></h4>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <h4><b>Bubble Chart</b></h4>
       </div>
     </div>
   </div>
@@ -48,7 +68,7 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="./static/js/app.js"></script>
-  <script src="./static/js/bonus.js"></script>
+  
 
 </body>
 
